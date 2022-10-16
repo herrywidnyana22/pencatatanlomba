@@ -1,0 +1,84 @@
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.card > div{
+    background: var(--warna-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: .3s all ease;
+}
+
+.card > div:hover{
+    box-shadow: none;
+}
+
+.card > div span{
+    background: var(--warna-primary-variant);
+    padding: 8px;
+    font-size: 32px;
+    border-radius: 50%;
+    color: var(--warna-white);
+}
+
+.card > div.card-2 span{
+    background: var(--warna-success);
+}
+
+.card > div.card-3 span{
+    background: var(--warna-danger);
+}
+
+.card > div.card-4 span{
+    background: var(--warna-warning);
+}
+
+.card > div .content-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card h3{
+    margin: 16px 0 8px;
+    font-size: 16px;
+}
+
+.card .progress{
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.card svg{
+    width: 7rem;
+    height: 7rem;
+    margin-left: 10px;
+}
+
+.card svg circle{
+    fill: none;
+    stroke: var(--warna-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 90;
+}
+
+.card .progress .number{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}

@@ -1,0 +1,5 @@
+export { default as UserRouter } from './UserRoute.js'
+export { default as KategoriRouter } from './KategoriRoute.js'
+export { default as PesertaRouter } from './PesertaRoute.js'
+export { default as PosRouter } from './PosRoute.js'
+export { default as AuthRouter } from './AuthRoute.js'

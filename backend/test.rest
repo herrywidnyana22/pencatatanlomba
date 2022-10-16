@@ -1,0 +1,193 @@
+# create user
+POST http://localhost:5001/users
+Content-Type: application/json
+
+{
+    "name": "Herry Widnyana",
+    "username": "herry",
+    "email": "herywdinyana@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "role": "admin",
+    "jk" : "l"
+}
+
+###
+// Get all user
+GET http://localhost:5001/users
+
+
+###
+//get user by id
+GET http://localhost:5001/users/c30532de-dc3a-48b2-b8ab-290f4344aa8c
+
+
+###
+// update user
+PATCH http://localhost:5001/users/c3b45db4-2212-40e2-b685-ea113d9276bc
+Content-Type: application/json
+
+{
+    "name": "Panitia 2",
+    "username": "panitia2",
+    "email": "bangjago@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "role": "panitia",
+    "jk" : "l"
+}
+
+###
+// DELETE user
+DELETE http://localhost:5001/users/502feb66-7256-49d6-bdc8-6fc04b8f2320
+
+
+###
+//LOGIN PANITIA
+POST http://localhost:5001/login
+Content-Type: application/json
+
+{
+    "username": "bangjago",
+    "password": "123456"
+}
+
+###
+//LOGIN ADMIN
+POST http://localhost:5001/login
+Content-Type: application/json
+
+{
+    "username": "herry",
+    "password": "12345"
+}
+
+###
+//LOGOUT
+DELETE http://localhost:5001/logout
+
+###
+//ABOUT ME
+GET http://localhost:5001/aboutme
+
+
+###
+// GET ALL KATEGORI
+GET http://localhost:5001/kategori
+
+
+###
+// CREATE KATEGORI
+POST http://localhost:5001/kategori
+Content-Type: application/json
+
+{
+    "namaKategori": "Dewasa - Wanita",
+    "jumlahPos": "4"
+}
+
+###
+// SELECT KATEGORI by id 
+GET http://localhost:5001/kategori/98819440-1c5d-48bd-ac9f-a8d786054571
+
+###
+// SELECET KATEGORI by iduser 
+GET http://localhost:5001/kategori/4
+
+
+###
+// UPDATE KATEGORI
+PATCH  http://localhost:5001/kategori/8c2f343b-81dc-4e74-9782-68a1d129e714
+Content-Type: application/json
+
+{
+    "namaKategori": "Testing - Pria",
+    "jumlahPos": "40"
+}
+
+###
+// DELETE KATEGORI
+DELETE   http://localhost:5001/kategori/8c2f343b-81dc-4e74-9782-68a1d129e714
+
+
+
+###
+// GET POS
+GET http://localhost:5001/pos
+
+
+###
+// GET POS
+GET http://localhost:5001/namapos/1
+
+
+###
+// GET POS by ID kategori
+GET http://localhost:5001/pos/2
+
+###
+// CREATE POS
+POST http://localhost:5001/pos
+Content-Type: application/json
+
+{
+    "no_peserta": "10",
+    "idKategori": "1",
+    "idUser": "1"
+},
+{
+    "no_peserta": "11",
+    "idKategori": "1",
+    "idUser": "1"
+},
+{
+    "no_peserta": "10",
+    "idKategori": "1",
+    "idUser": "1"
+}
+
+###
+// UPDATE POS
+PATCH  http://localhost:5001/pos/67f27775-48cd-420b-b9ed-cf0984cd99fb
+Content-Type: application/json
+
+{
+    "namaPos": "Pos Start",
+    "idKategori": "1",
+    "idUser": "5"
+}
+
+###
+// GET ALL PESERTA
+GET http://localhost:5001/peserta
+
+###
+// CREATE PESERTA IN POS
+POST http://localhost:5001/peserta
+Content-Type: application/json
+
+[
+    {
+        "peserta1": "10",
+        "kategori": "1",
+        "pos": "1"
+    },
+    {
+        "peserta2": "11",
+        "kategori": "1",
+        "pos": "1"
+    },
+    {
+        "peserta3": "12",
+        "kategori": "1",
+        "pos": "1"
+    }
+]
+
+###
+// GET ALL PESERTA BY POS
+GET http://localhost:5001/peserta/pos/1
+
+###
+// GET ALL PESERTA BY Kategori
+GET http://localhost:5001/peserta/kat/1

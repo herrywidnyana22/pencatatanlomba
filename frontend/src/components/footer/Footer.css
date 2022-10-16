@@ -1,0 +1,8 @@
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  background: #eee;
+  width: 100%;
+}

@@ -1,0 +1,65 @@
+.datatable {
+  margin-top: 10px;
+}
+
+.datatable table {
+  width: 100%;
+  text-align: left;
+}
+
+.datatable table th {
+  font-size: 16px;
+  text-align: center;
+  height: 40px;
+}
+
+.datatable table tbody td {
+  height: 35px;
+  border-bottom: 1px solid var(--warna-light);
+  color: var(--warna-dark-variant);
+}
+
+.datatable table tbody tr:last-child td {
+  border: none;
+}
+
+.datatable .warning,
+.datatable .danger,
+.datatable .success {
+  color: var(--warna-white);
+  text-align: center;
+  border-radius: var(--card-border-radius);
+}
+
+.datatable .success {
+  background: var(--warna-success);
+}
+
+.datatable .danger {
+  background: var(--warna-danger);
+}
+
+.datatable .warning {
+  background: var(--warna-warning);
+}
+
+.datatable .primary {
+  color: var(--warna-primary);
+  text-align: right;
+}
+
+.datatable a {
+  text-align: center;
+  display: block;
+  margin: 16px auto;
+  color: var(--warna-primary);
+}
+
+.datatable table:hover {
+  box-shadow: none;
+}
+
+.datatable table tbody tr:hover {
+  background: var(--warna-background);
+  cursor: pointer;
+}

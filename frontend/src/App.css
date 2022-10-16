@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap");
+/*==============================  ROOT VARIABEL  ============================== */
+:root {
+  --warna-primary: #7380ec;
+  --warna-danger: #ff7782;
+  --warna-success: #41f1b6;
+  --warna-warning: #ffbb55;
+  --warna-white: #fff;
+  --warna-info-dark: #7d8da1;
+  --warna-info-light: #dce1eb;
+  --warna-dark: #363949;
+  --warna-light: rgba(132, 139, 200, 0.18);
+  --warna-primary-variant: #111e88;
+  --warna-dark-variant: #677483;
+  --warna-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding: 1.2rem;
+
+  --second-hue: 219;
+
+  --box-shadow: 0 2rem 3rem var(--warna-light);
+
+  /* Z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/*==============================  TEMA GELAP VARIABEL  ============================== */
+
+.variabel-tema-gelap {
+  --warna-background: #181a1e;
+  --warna-white: #202528;
+  --warna-dark: #edeffd;
+  --warna-dark-variant: #a3bdcc;
+  --warna-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--warna-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: poppins, sans-serif;
+  font-size: 0.88rem;
+  background: var(--warna-background);
+  user-select: none;
+  overflow: hidden;
+  color: var(--warna-dark);
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--warna-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1,
+.title {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h3 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.text-history {
+  color: var(--warna-info-dark);
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+p {
+  color: var(--warna-dark-variant);
+}
+
+.primary {
+  color: var(--warna-primary);
+}
+
+.danger {
+  color: var(--warna-danger);
+}
+
+.success {
+  color: var(--warna-success);
+}
+
+.warning {
+  color: var(--warna-warning);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  height: 85vh;
+  margin: 50px auto;
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+}
+
+.card-content {
+  background: var(--warna-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--box-shadow);
+  transition: 0.3s all ease;
+  max-height: 400px;
+  overflow-x: auto;
+}
+
+.card-content:hover {
+  box-shadow: none;
+}
+
+.form {
+  margin: 10px 0;
+}
+
+.form-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.btn-submit {
+  height: 30px;
+  margin: 10px 0;
+}
+
+.btn-submit input {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: 2px dashed var(--warna-primary);
+  color: var(--warna-primary);
+  font-size: 16px;
+}
+
+.btn-submit input:hover {
+  background: var(--warna-primary);
+  color: white;
+  cursor: pointer;
+}
+
+.blur {
+  filter: blur(5px);
+}

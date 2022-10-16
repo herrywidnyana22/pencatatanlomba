@@ -1,0 +1,50 @@
+.feed {
+  position: relative;
+}
+
+.feed .notif-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feed .notif-bar .notif-icon {
+  position: relative;
+  display: flex;
+  padding: 2px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.feed .notif-bar .notif-icon span {
+  font-size: 1.8rem;
+}
+
+.feed .notif-bar .notif-icon p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: var(--warna-danger);
+  color: var(--warna-white);
+  top: -12px;
+  right: -8px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--warna-white);
+}
+
+.feed-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 0;
+}
+
+.photo-feed {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}

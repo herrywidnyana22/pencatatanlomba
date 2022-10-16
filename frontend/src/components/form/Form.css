@@ -1,0 +1,60 @@
+.form-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  padding: var(--card-padding);
+  height: auto;
+}
+
+.form-container .pos-content {
+  margin-bottom: 100px;
+  max-height: 60%;
+  overflow: auto;
+}
+
+.form-container .form-kategori {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+}
+
+.form-container .form-kategori .input-box {
+  margin: 10px 0;
+  width: calc(150% / 2);
+}
+
+.form-kategori .input-box input {
+  height: 2.5rem;
+  width: auto;
+  outline: none;
+  border-radius: 0.3rem;
+  border: 1px solid #ccc;
+  padding-left: 1rem;
+  font-size: 1rem;
+  border-bottom-width: 2px;
+  transition: all 0.4s ease;
+}
+
+.form-kategori .input-box input:focus {
+  border-color: var(--warna-primary);
+}
+
+.form-kategori .input-box .details {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.btn-simpan {
+  background-color: var(--warna-primary);
+}
+
+.btn-simpan {
+  bottom: 30px;
+  right: 15px;
+}
+
+form h2 {
+  margin-top: 20px;
+}

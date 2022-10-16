@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background: var(--warna-white);
+  border-radius: var(--card-border-radius);
+  padding: 10px var(--padding);
+  box-shadow: var(--box-shadow);
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .menu ul {
+  display: flex;
+  margin-right: 15px;
+}
+
+.navbar .menu ul li {
+  display: flex;
+  padding: 10px;
+  width: fit-content;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.navbar .menu ul li a {
+  color: var(--warna-primary);
+}
+
+.navbar:hover {
+  box-shadow: none;
+}
+
+.navbar .menu .active,
+.navbar .menu ul li:hover {
+  background: var(--warna-background);
+  border-radius: var(--padding);
+}
+
+.navbar .date {
+  background: var(--warna-background);
+  padding: 10px;
+  border-radius: 0 var(--card-border-radius) var(--card-border-radius) 0;
+}
+
+.date input[type="date"] {
+  background: transparent;
+  color: var(--warna-dark);
+}

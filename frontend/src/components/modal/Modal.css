@@ -1,0 +1,65 @@
+#portal .modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  margin: auto;
+  background: var(--warna-white);
+  width: 500px;
+  max-height: 600px;
+  border-radius: var(--border-radius-2);
+  box-shadow: var(--box-shadow);
+  animation: animate 0.3s;
+}
+.modal .modal-title {
+  position: absolute;
+  margin: 20px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.modal .modal-content {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+}
+.modal button {
+  position: absolute;
+  padding: 8px 11px;
+  outline: none;
+  color: var(--warna-white);
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal .btn-close {
+  top: 15px;
+  right: 15px;
+  background-color: var(--warna-danger);
+}
+
+.modal button:hover {
+  color: var(--warna-dark);
+}
+
+@keyframes animate {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
